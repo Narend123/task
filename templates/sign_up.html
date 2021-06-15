@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block content%}
+<div style="height: 300px;width: 300px;margin-left: 400px;">
+<h1>Sign Up</h1>
+<form action="" method="post" enctype="multipart/form-data">
+<input type="text" name="u_name" placeholder="enter username"><br><br>
+<input type="email" name="email" placeholder="enter email"><br><br>
+	<input type="password" name="pass" placeholder="enter password"><br><br>
+	<input type="password" name="pass1" placeholder="Confirm password"><br><br>
+	<input type="text" name="add" placeholder="enter address"><br>
+	<input type="submit" name="submit">
+</form>
+</div>
+{% endblock%}

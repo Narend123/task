@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		a{text-decoration: none;
+			color: white;}
+	</style>
+</head>
+<body style="background-color: ">
+	<div>
+	<table border="" width="100%" align="center" style="border-collapse: collapse;height: 20%;border:none;display: block;background-color: teal;color: white">
+
+		<tr><td><h1>User Management</h1></td></tr>
+	</table></div>
+	<table border="0" width="100%" style="border-collapse: collapse;height: 10%;border:none;text-decoration: none;background-color:brown;color: white;">
+		<tr><td width="7%"></td>
+			<td width="7%"><a href="{% url 'home' %}">Home</a></td>
+			<td width="7%"><a href="{% url 'login' %}">Login</a></td>
+			<td width="7%"><a href="{% url 'login' %}">Users</a></td>
+			<td width="7%"><a href="{% url 'home' %}">Logout</a></td>
+			<td width="20%"></td><td width="20%"></td>
+		</tr>
+	</table>
+		
+		
+	</ul>
+	{% block content%}
+
+
+	{% endblock%}
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+
+{% block content%}
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div style="height: 300px;width: 300px;margin-left: 400px;">
+	<h1>Login Form</h1>
+	<form action="login" enctype="multipart/form-data" method="post">
+		{% csrf_token %}
+	<input type="email" name="email" placeholder="enter email"><br><br>
+	<input type="password" name="pass" placeholder="enter password"><br><br>
+	<input type="submit" name="submit">
+	</form>
+	<a href="{% url 'sign_up' %}" style="color: red">Sign UP</a>
+	</div>
+
+</body>
+</html>
+{% endblock%}
